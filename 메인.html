@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .di{
+            width: auto;
+            height: 50px;
+            padding-left: 730px;
+            padding-top: 1px;
+            padding-bottom: 20px;
+            margin-bottom: 30px;
+            background-color: aqua;
+        }
+        ul{
+            display: flex;
+            flex-wrap: wrap;
+        }
+        li{
+            list-style: none;
+            border: 1px solid black;
+            width: 300px;
+            height: 413px;
+            margin-left: 204px;
+            text-align: center;
+        }
+        .ghk1{
+            margin-left: 450px;
+            margin-top: 10px;
+            width: 300px;
+            height: 50px;
+        }
+        .ghk2{
+            margin-left: 223px;
+            margin-top: 10px;
+            width: 300px;
+            height: 50px;
+        }
+        .ghk3{
+            width: 300px;
+            height: 50px;
+            margin-top: 10px;
+            margin-left: 450px;
+        }
+        .nu1{
+            display: flex;
+        }
+        .grd{
+            margin-top: 90px;
+        }
+        button{
+            width: 150px;
+            height: 63px;
+            border: 0px;
+            background-color: silver;
+        }
+        img{
+            margin: -3.5px -5px;
+            width: 300px;
+            height: 300px;
+        }
+        .aban{
+            border-right: 1px solid black;
+        }
+        .dv{
+            position:relative; 
+            z-index:1;
+        }
+        .dv::after{
+        background:url('로고3.jpg') no-repeat;
+        opacity:0.5!important;
+        top:0; left:0;
+        position:absolute; 
+        z-index:-1; 
+        content:'';
+        width: 1100px;
+        height: 1100px;
+        margin-left: 370px;
+        }
+        .grade{
+            background-color: skyblue;
+            height: 38px;
+            padding-top: 15px;
+        }
+    </style>
+</head>
+<body>
+    <header class="di">
+        <h2>한양공업고등학교 2학년 과 목록</h2>
+    </header>
+    <div class="dv">
+    <ul>
+        <li><div class="grade">건설과</div><img class="s1" src="건설.png"><a href="건설A.html"><button class="aban">A반</button></a><a href="건설B.html"><button>B반</button></a></li>
+        <li><div class="grade">건축과</div><img class="s2" src="건축.jpg"><a href="건축A.html"><button class="aban">A반</button></a><a href="건축B.html"><button>B반</button></a></li>
+        <li><div class="grade">자동차과</div><img class="s3" src="자동차.png"><a href="자동차A.html"><button class="aban">A반</button></a><a href="자동차B.html"><button>B반</button></a></li>
+        <li class="grd"><div class="grade">전자과</div><img class="s4" src="전자.png"><a href="전자A.html"><button class="aban">A반</button></a><a href="전자B.html"><button>B반</button></a></li>
+        <li class="grd"><div class="grade">기계과</div><img class="s5" src="기계.png"><a href="기계A.html"><button class="aban">A반</button></a><a href="기계B.html"><button>B반</button></a></li>
+        <li class="grd"><div class="grade">컴넷과</div><img class="s6" src="컴넷.png"><a href="컴넷A.html"><button class="aban">A반</button></a><a href="컴넷B.html"><button>B반</button></a></li>
+    </ul>
+</div>
+</body>
+</html>

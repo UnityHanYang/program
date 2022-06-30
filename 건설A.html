@@ -1,0 +1,4501 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>지각자 체크</title>
+    <style>
+        .tbl{
+            border-collapse: collapse;
+            width: 700px;
+            text-align: center;
+            margin: auto;
+        }
+        .tbl td{
+            border: 1px solid black;
+            height: 30px;
+        }
+        .number{
+            width: 15%;
+        }
+        .name{
+            width: 25%;
+        }
+        .clock{
+            width: 30%;
+        }
+        .di{
+            width: auto;
+            height: 50px;
+            padding-left: 850px;
+            padding-top: 1px;
+            padding-bottom: 20px;
+            margin-bottom: 30px;
+            background-color: aqua;
+        }
+        button{
+            width: 100%;
+            height: 100%;
+            border: 0px;
+            background-color: silver;
+        }
+        .fir td{
+            background-color: yellow;
+            color: green;
+        }
+        .ttable{
+            border-collapse: collapse;
+            margin-top: 40px;
+            width: 550px;
+            margin-left: 665px;
+            text-align: center;
+        }
+        .ttable td{
+            border: 1px solid black;
+        }
+        .tday{
+            height: 60px;
+            background-color: blueviolet;
+            color: gold;
+            font-size: large;
+        }
+    </style>
+</head>
+<body>
+    <script>
+        function check1() {
+            let today1 = new Date();
+
+            let am = '오전';
+            let pm = '오후';
+
+            let hour1 = today1.getHours();
+            hours1 = String(hour1);
+            let min1 = today1.getMinutes();
+            mins1 = String(min1);
+
+            let ap = hour1;
+            
+            switch(hour1){
+                case 00:
+                    hour1=0;
+                    break;
+                case 01:
+                    hour1=1;
+                    break;
+                case 02:
+                    hour1=2;
+                    break;
+                case 03:
+                    hour1=3;
+                    break;
+                case 04:
+                    hour1=4;
+                    break;
+                case 05:
+                    hour1=5;
+                    break;
+                case 06:
+                    hour1=6;
+                    break;
+                case 07:
+                    hour1=7;
+                    break;
+                case 08:
+                    hour1=8;
+                    break;
+                case 09:
+                    hour1=9;
+                    break;
+                case 10:
+                    hour1=10;
+                    break;
+                case 11:
+                    hour1=11;
+                    break;
+                case 12:
+                    hour1=12;
+                    break;
+                case 13:
+                    hour1=1;
+                    break;
+                case 14:
+                    hour1=2;
+                    break;
+                case 15:
+                    hour1=3;
+                    break;
+                case 16:
+                    hour1=4;
+                    break;
+                case 17:
+                    hour1=5;
+                    break;
+                case 18:
+                    hour1=6;
+                    break;
+                case 19:
+                    hour1=7;
+                    break;
+                case 20:
+                    hour1=8;
+                    break;
+                case 21:
+                    hour1=9;
+                    break;
+                case 22:
+                    hour1=10;
+                    break;
+                case 23:
+                    hour1=11;
+                    break;
+                case 24:
+                    hour1=12;
+                    break;
+            }
+        
+
+            for(let i = 0; i<13; i++){
+                if(hour1==i){
+                    if(ap>11){
+                        document.getElementById('c1').innerHTML = pm+" "+i+"시 "+min1+"분";
+                        continue;
+                    }else{
+                        document.getElementById('c1').innerHTML = am+" "+i+"시 "+min1+"분";
+                        continue;
+                    }
+                }
+            }
+        }
+
+        function check2() {
+            let today1 = new Date();
+
+            let am = '오전';
+            let pm = '오후';
+
+            let hour1 = today1.getHours();
+            hours1 = String(hour1);
+            let min1 = today1.getMinutes();
+            mins1 = String(min1);
+
+            let ap = hour1;
+            
+            switch(hour1){
+                case 00:
+                    hour1=0;
+                    break;
+                case 01:
+                    hour1=1;
+                    break;
+                case 02:
+                    hour1=2;
+                    break;
+                case 03:
+                    hour1=3;
+                    break;
+                case 04:
+                    hour1=4;
+                    break;
+                case 05:
+                    hour1=5;
+                    break;
+                case 06:
+                    hour1=6;
+                    break;
+                case 07:
+                    hour1=7;
+                    break;
+                case 08:
+                    hour1=8;
+                    break;
+                case 09:
+                    hour1=9;
+                    break;
+                case 10:
+                    hour1=10;
+                    break;
+                case 11:
+                    hour1=11;
+                    break;
+                case 12:
+                    hour1=12;
+                    break;
+                case 13:
+                    hour1=1;
+                    break;
+                case 14:
+                    hour1=2;
+                    break;
+                case 15:
+                    hour1=3;
+                    break;
+                case 16:
+                    hour1=4;
+                    break;
+                case 17:
+                    hour1=5;
+                    break;
+                case 18:
+                    hour1=6;
+                    break;
+                case 19:
+                    hour1=7;
+                    break;
+                case 20:
+                    hour1=8;
+                    break;
+                case 21:
+                    hour1=9;
+                    break;
+                case 22:
+                    hour1=10;
+                    break;
+                case 23:
+                    hour1=11;
+                    break;
+                case 24:
+                    hour1=12;
+                    break;
+            }
+        
+
+            for(let i = 0; i<13; i++){
+                if(hour1==i){
+                    if(ap>11){
+                        document.getElementById('c2').innerHTML = pm+" "+i+"시 "+min1+"분";
+                        continue;
+                    }else{
+                        document.getElementById('c2').innerHTML = am+" "+i+"시 "+min1+"분";
+                        continue;
+                    }
+                }
+            }
+        }
+
+        function check3() {
+            let today1 = new Date();
+
+            let am = '오전';
+            let pm = '오후';
+
+            let hour1 = today1.getHours();
+            hours1 = String(hour1);
+            let min1 = today1.getMinutes();
+            mins1 = String(min1);
+
+            let ap = hour1;
+            
+            switch(hour1){
+                case 00:
+                    hour1=0;
+                    break;
+                case 01:
+                    hour1=1;
+                    break;
+                case 02:
+                    hour1=2;
+                    break;
+                case 03:
+                    hour1=3;
+                    break;
+                case 04:
+                    hour1=4;
+                    break;
+                case 05:
+                    hour1=5;
+                    break;
+                case 06:
+                    hour1=6;
+                    break;
+                case 07:
+                    hour1=7;
+                    break;
+                case 08:
+                    hour1=8;
+                    break;
+                case 09:
+                    hour1=9;
+                    break;
+                case 10:
+                    hour1=10;
+                    break;
+                case 11:
+                    hour1=11;
+                    break;
+                case 12:
+                    hour1=12;
+                    break;
+                case 13:
+                    hour1=1;
+                    break;
+                case 14:
+                    hour1=2;
+                    break;
+                case 15:
+                    hour1=3;
+                    break;
+                case 16:
+                    hour1=4;
+                    break;
+                case 17:
+                    hour1=5;
+                    break;
+                case 18:
+                    hour1=6;
+                    break;
+                case 19:
+                    hour1=7;
+                    break;
+                case 20:
+                    hour1=8;
+                    break;
+                case 21:
+                    hour1=9;
+                    break;
+                case 22:
+                    hour1=10;
+                    break;
+                case 23:
+                    hour1=11;
+                    break;
+                case 24:
+                    hour1=12;
+                    break;
+            }
+        
+
+            for(let i = 0; i<13; i++){
+                if(hour1==i){
+                    if(ap>11){
+                        document.getElementById('c3').innerHTML = pm+" "+i+"시 "+min1+"분";
+                        continue;
+                    }else{
+                        document.getElementById('c3').innerHTML = am+" "+i+"시 "+min1+"분";
+                        continue;
+                    }
+                }
+            }
+        }
+
+        function check4() {
+            let today1 = new Date();
+
+            let am = '오전';
+            let pm = '오후';
+
+            let hour1 = today1.getHours();
+            hours1 = String(hour1);
+            let min1 = today1.getMinutes();
+            mins1 = String(min1);
+
+            let ap = hour1;
+            
+            switch(hour1){
+                case 00:
+                    hour1=0;
+                    break;
+                case 01:
+                    hour1=1;
+                    break;
+                case 02:
+                    hour1=2;
+                    break;
+                case 03:
+                    hour1=3;
+                    break;
+                case 04:
+                    hour1=4;
+                    break;
+                case 05:
+                    hour1=5;
+                    break;
+                case 06:
+                    hour1=6;
+                    break;
+                case 07:
+                    hour1=7;
+                    break;
+                case 08:
+                    hour1=8;
+                    break;
+                case 09:
+                    hour1=9;
+                    break;
+                case 10:
+                    hour1=10;
+                    break;
+                case 11:
+                    hour1=11;
+                    break;
+                case 12:
+                    hour1=12;
+                    break;
+                case 13:
+                    hour1=1;
+                    break;
+                case 14:
+                    hour1=2;
+                    break;
+                case 15:
+                    hour1=3;
+                    break;
+                case 16:
+                    hour1=4;
+                    break;
+                case 17:
+                    hour1=5;
+                    break;
+                case 18:
+                    hour1=6;
+                    break;
+                case 19:
+                    hour1=7;
+                    break;
+                case 20:
+                    hour1=8;
+                    break;
+                case 21:
+                    hour1=9;
+                    break;
+                case 22:
+                    hour1=10;
+                    break;
+                case 23:
+                    hour1=11;
+                    break;
+                case 24:
+                    hour1=12;
+                    break;
+            }
+        
+
+            for(let i = 0; i<13; i++){
+                if(hour1==i){
+                    if(ap>11){
+                        document.getElementById('c4').innerHTML = pm+" "+i+"시 "+min1+"분";
+                        continue;
+                    }else{
+                        document.getElementById('c4').innerHTML = am+" "+i+"시 "+min1+"분";
+                        continue;
+                    }
+                }
+            }
+        }
+
+        function check5() {
+            let today1 = new Date();
+
+            let am = '오전';
+            let pm = '오후';
+
+            let hour1 = today1.getHours();
+            hours1 = String(hour1);
+            let min1 = today1.getMinutes();
+            mins1 = String(min1);
+
+            let ap = hour1;
+            
+            switch(hour1){
+                case 00:
+                    hour1=0;
+                    break;
+                case 01:
+                    hour1=1;
+                    break;
+                case 02:
+                    hour1=2;
+                    break;
+                case 03:
+                    hour1=3;
+                    break;
+                case 04:
+                    hour1=4;
+                    break;
+                case 05:
+                    hour1=5;
+                    break;
+                case 06:
+                    hour1=6;
+                    break;
+                case 07:
+                    hour1=7;
+                    break;
+                case 08:
+                    hour1=8;
+                    break;
+                case 09:
+                    hour1=9;
+                    break;
+                case 10:
+                    hour1=10;
+                    break;
+                case 11:
+                    hour1=11;
+                    break;
+                case 12:
+                    hour1=12;
+                    break;
+                case 13:
+                    hour1=1;
+                    break;
+                case 14:
+                    hour1=2;
+                    break;
+                case 15:
+                    hour1=3;
+                    break;
+                case 16:
+                    hour1=4;
+                    break;
+                case 17:
+                    hour1=5;
+                    break;
+                case 18:
+                    hour1=6;
+                    break;
+                case 19:
+                    hour1=7;
+                    break;
+                case 20:
+                    hour1=8;
+                    break;
+                case 21:
+                    hour1=9;
+                    break;
+                case 22:
+                    hour1=10;
+                    break;
+                case 23:
+                    hour1=11;
+                    break;
+                case 24:
+                    hour1=12;
+                    break;
+            }
+        
+
+            for(let i = 0; i<13; i++){
+                if(hour1==i){
+                    if(ap>11){
+                        document.getElementById('c5').innerHTML = pm+" "+i+"시 "+min1+"분";
+                        continue;
+                    }else{
+                        document.getElementById('c5').innerHTML = am+" "+i+"시 "+min1+"분";
+                        continue;
+                    }
+                }
+            }
+        }
+
+        function check6() {
+            let today1 = new Date();
+
+            let am = '오전';
+            let pm = '오후';
+
+            let hour1 = today1.getHours();
+            hours1 = String(hour1);
+            let min1 = today1.getMinutes();
+            mins1 = String(min1);
+
+            let ap = hour1;
+            
+            switch(hour1){
+                case 00:
+                    hour1=0;
+                    break;
+                case 01:
+                    hour1=1;
+                    break;
+                case 02:
+                    hour1=2;
+                    break;
+                case 03:
+                    hour1=3;
+                    break;
+                case 04:
+                    hour1=4;
+                    break;
+                case 05:
+                    hour1=5;
+                    break;
+                case 06:
+                    hour1=6;
+                    break;
+                case 07:
+                    hour1=7;
+                    break;
+                case 08:
+                    hour1=8;
+                    break;
+                case 09:
+                    hour1=9;
+                    break;
+                case 10:
+                    hour1=10;
+                    break;
+                case 11:
+                    hour1=11;
+                    break;
+                case 12:
+                    hour1=12;
+                    break;
+                case 13:
+                    hour1=1;
+                    break;
+                case 14:
+                    hour1=2;
+                    break;
+                case 15:
+                    hour1=3;
+                    break;
+                case 16:
+                    hour1=4;
+                    break;
+                case 17:
+                    hour1=5;
+                    break;
+                case 18:
+                    hour1=6;
+                    break;
+                case 19:
+                    hour1=7;
+                    break;
+                case 20:
+                    hour1=8;
+                    break;
+                case 21:
+                    hour1=9;
+                    break;
+                case 22:
+                    hour1=10;
+                    break;
+                case 23:
+                    hour1=11;
+                    break;
+                case 24:
+                    hour1=12;
+                    break;
+            }
+        
+
+            for(let i = 0; i<13; i++){
+                if(hour1==i){
+                    if(ap>11){
+                        document.getElementById('c6').innerHTML = pm+" "+i+"시 "+min1+"분";
+                        continue;
+                    }else{
+                        document.getElementById('c6').innerHTML = am+" "+i+"시 "+min1+"분";
+                        continue;
+                    }
+                }
+            }
+        }
+
+        function check7() {
+            let today1 = new Date();
+
+            let am = '오전';
+            let pm = '오후';
+
+            let hour1 = today1.getHours();
+            hours1 = String(hour1);
+            let min1 = today1.getMinutes();
+            mins1 = String(min1);
+
+            let ap = hour1;
+            
+            switch(hour1){
+                case 00:
+                    hour1=0;
+                    break;
+                case 01:
+                    hour1=1;
+                    break;
+                case 02:
+                    hour1=2;
+                    break;
+                case 03:
+                    hour1=3;
+                    break;
+                case 04:
+                    hour1=4;
+                    break;
+                case 05:
+                    hour1=5;
+                    break;
+                case 06:
+                    hour1=6;
+                    break;
+                case 07:
+                    hour1=7;
+                    break;
+                case 08:
+                    hour1=8;
+                    break;
+                case 09:
+                    hour1=9;
+                    break;
+                case 10:
+                    hour1=10;
+                    break;
+                case 11:
+                    hour1=11;
+                    break;
+                case 12:
+                    hour1=12;
+                    break;
+                case 13:
+                    hour1=1;
+                    break;
+                case 14:
+                    hour1=2;
+                    break;
+                case 15:
+                    hour1=3;
+                    break;
+                case 16:
+                    hour1=4;
+                    break;
+                case 17:
+                    hour1=5;
+                    break;
+                case 18:
+                    hour1=6;
+                    break;
+                case 19:
+                    hour1=7;
+                    break;
+                case 20:
+                    hour1=8;
+                    break;
+                case 21:
+                    hour1=9;
+                    break;
+                case 22:
+                    hour1=10;
+                    break;
+                case 23:
+                    hour1=11;
+                    break;
+                case 24:
+                    hour1=12;
+                    break;
+            }
+        
+
+            for(let i = 0; i<13; i++){
+                if(hour1==i){
+                    if(ap>11){
+                        document.getElementById('c7').innerHTML = pm+" "+i+"시 "+min1+"분";
+                        continue;
+                    }else{
+                        document.getElementById('c7').innerHTML = am+" "+i+"시 "+min1+"분";
+                        continue;
+                    }
+                }
+            }
+        }
+
+        function check8() {
+            let today1 = new Date();
+
+            let am = '오전';
+            let pm = '오후';
+
+            let hour1 = today1.getHours();
+            hours1 = String(hour1);
+            let min1 = today1.getMinutes();
+            mins1 = String(min1);
+
+            let ap = hour1;
+            
+            switch(hour1){
+                case 00:
+                    hour1=0;
+                    break;
+                case 01:
+                    hour1=1;
+                    break;
+                case 02:
+                    hour1=2;
+                    break;
+                case 03:
+                    hour1=3;
+                    break;
+                case 04:
+                    hour1=4;
+                    break;
+                case 05:
+                    hour1=5;
+                    break;
+                case 06:
+                    hour1=6;
+                    break;
+                case 07:
+                    hour1=7;
+                    break;
+                case 08:
+                    hour1=8;
+                    break;
+                case 09:
+                    hour1=9;
+                    break;
+                case 10:
+                    hour1=10;
+                    break;
+                case 11:
+                    hour1=11;
+                    break;
+                case 12:
+                    hour1=12;
+                    break;
+                case 13:
+                    hour1=1;
+                    break;
+                case 14:
+                    hour1=2;
+                    break;
+                case 15:
+                    hour1=3;
+                    break;
+                case 16:
+                    hour1=4;
+                    break;
+                case 17:
+                    hour1=5;
+                    break;
+                case 18:
+                    hour1=6;
+                    break;
+                case 19:
+                    hour1=7;
+                    break;
+                case 20:
+                    hour1=8;
+                    break;
+                case 21:
+                    hour1=9;
+                    break;
+                case 22:
+                    hour1=10;
+                    break;
+                case 23:
+                    hour1=11;
+                    break;
+                case 24:
+                    hour1=12;
+                    break;
+            }
+        
+
+            for(let i = 0; i<13; i++){
+                if(hour1==i){
+                    if(ap>11){
+                        document.getElementById('c8').innerHTML = pm+" "+i+"시 "+min1+"분";
+                        continue;
+                    }else{
+                        document.getElementById('c8').innerHTML = am+" "+i+"시 "+min1+"분";
+                        continue;
+                    }
+                }
+            }
+        }
+
+        function check9() {
+            let today1 = new Date();
+
+            let am = '오전';
+            let pm = '오후';
+
+            let hour1 = today1.getHours();
+            hours1 = String(hour1);
+            let min1 = today1.getMinutes();
+            mins1 = String(min1);
+
+            let ap = hour1;
+            
+            switch(hour1){
+                case 00:
+                    hour1=0;
+                    break;
+                case 01:
+                    hour1=1;
+                    break;
+                case 02:
+                    hour1=2;
+                    break;
+                case 03:
+                    hour1=3;
+                    break;
+                case 04:
+                    hour1=4;
+                    break;
+                case 05:
+                    hour1=5;
+                    break;
+                case 06:
+                    hour1=6;
+                    break;
+                case 07:
+                    hour1=7;
+                    break;
+                case 08:
+                    hour1=8;
+                    break;
+                case 09:
+                    hour1=9;
+                    break;
+                case 10:
+                    hour1=10;
+                    break;
+                case 11:
+                    hour1=11;
+                    break;
+                case 12:
+                    hour1=12;
+                    break;
+                case 13:
+                    hour1=1;
+                    break;
+                case 14:
+                    hour1=2;
+                    break;
+                case 15:
+                    hour1=3;
+                    break;
+                case 16:
+                    hour1=4;
+                    break;
+                case 17:
+                    hour1=5;
+                    break;
+                case 18:
+                    hour1=6;
+                    break;
+                case 19:
+                    hour1=7;
+                    break;
+                case 20:
+                    hour1=8;
+                    break;
+                case 21:
+                    hour1=9;
+                    break;
+                case 22:
+                    hour1=10;
+                    break;
+                case 23:
+                    hour1=11;
+                    break;
+                case 24:
+                    hour1=12;
+                    break;
+            }
+        
+
+            for(let i = 0; i<13; i++){
+                if(hour1==i){
+                    if(ap>11){
+                        document.getElementById('c9').innerHTML = pm+" "+i+"시 "+min1+"분";
+                        continue;
+                    }else{
+                        document.getElementById('c9').innerHTML = am+" "+i+"시 "+min1+"분";
+                        continue;
+                    }
+                }
+            }
+        }
+
+        function check10() {
+            let today1 = new Date();
+
+            let am = '오전';
+            let pm = '오후';
+
+            let hour1 = today1.getHours();
+            hours1 = String(hour1);
+            let min1 = today1.getMinutes();
+            mins1 = String(min1);
+
+            let ap = hour1;
+            
+            switch(hour1){
+                case 00:
+                    hour1=0;
+                    break;
+                case 01:
+                    hour1=1;
+                    break;
+                case 02:
+                    hour1=2;
+                    break;
+                case 03:
+                    hour1=3;
+                    break;
+                case 04:
+                    hour1=4;
+                    break;
+                case 05:
+                    hour1=5;
+                    break;
+                case 06:
+                    hour1=6;
+                    break;
+                case 07:
+                    hour1=7;
+                    break;
+                case 08:
+                    hour1=8;
+                    break;
+                case 09:
+                    hour1=9;
+                    break;
+                case 10:
+                    hour1=10;
+                    break;
+                case 11:
+                    hour1=11;
+                    break;
+                case 12:
+                    hour1=12;
+                    break;
+                case 13:
+                    hour1=1;
+                    break;
+                case 14:
+                    hour1=2;
+                    break;
+                case 15:
+                    hour1=3;
+                    break;
+                case 16:
+                    hour1=4;
+                    break;
+                case 17:
+                    hour1=5;
+                    break;
+                case 18:
+                    hour1=6;
+                    break;
+                case 19:
+                    hour1=7;
+                    break;
+                case 20:
+                    hour1=8;
+                    break;
+                case 21:
+                    hour1=9;
+                    break;
+                case 22:
+                    hour1=10;
+                    break;
+                case 23:
+                    hour1=11;
+                    break;
+                case 24:
+                    hour1=12;
+                    break;
+            }
+        
+
+            for(let i = 0; i<13; i++){
+                if(hour1==i){
+                    if(ap>11){
+                        document.getElementById('c10').innerHTML = pm+" "+i+"시 "+min1+"분";
+                        continue;
+                    }else{
+                        document.getElementById('c10').innerHTML = am+" "+i+"시 "+min1+"분";
+                        continue;
+                    }
+                }
+            }
+        }
+
+        function check11() {
+            let today1 = new Date();
+
+            let am = '오전';
+            let pm = '오후';
+
+            let hour1 = today1.getHours();
+            hours1 = String(hour1);
+            let min1 = today1.getMinutes();
+            mins1 = String(min1);
+
+            let ap = hour1;
+            
+            switch(hour1){
+                case 00:
+                    hour1=0;
+                    break;
+                case 01:
+                    hour1=1;
+                    break;
+                case 02:
+                    hour1=2;
+                    break;
+                case 03:
+                    hour1=3;
+                    break;
+                case 04:
+                    hour1=4;
+                    break;
+                case 05:
+                    hour1=5;
+                    break;
+                case 06:
+                    hour1=6;
+                    break;
+                case 07:
+                    hour1=7;
+                    break;
+                case 08:
+                    hour1=8;
+                    break;
+                case 09:
+                    hour1=9;
+                    break;
+                case 10:
+                    hour1=10;
+                    break;
+                case 11:
+                    hour1=11;
+                    break;
+                case 12:
+                    hour1=12;
+                    break;
+                case 13:
+                    hour1=1;
+                    break;
+                case 14:
+                    hour1=2;
+                    break;
+                case 15:
+                    hour1=3;
+                    break;
+                case 16:
+                    hour1=4;
+                    break;
+                case 17:
+                    hour1=5;
+                    break;
+                case 18:
+                    hour1=6;
+                    break;
+                case 19:
+                    hour1=7;
+                    break;
+                case 20:
+                    hour1=8;
+                    break;
+                case 21:
+                    hour1=9;
+                    break;
+                case 22:
+                    hour1=10;
+                    break;
+                case 23:
+                    hour1=11;
+                    break;
+                case 24:
+                    hour1=12;
+                    break;
+            }
+        
+
+            for(let i = 0; i<13; i++){
+                if(hour1==i){
+                    if(ap>11){
+                        document.getElementById('c11').innerHTML = pm+" "+i+"시 "+min1+"분";
+                        continue;
+                    }else{
+                        document.getElementById('c11').innerHTML = am+" "+i+"시 "+min1+"분";
+                        continue;
+                    }
+                }
+            }
+        }
+
+        function check12() {
+            let today1 = new Date();
+
+            let am = '오전';
+            let pm = '오후';
+
+            let hour1 = today1.getHours();
+            hours1 = String(hour1);
+            let min1 = today1.getMinutes();
+            mins1 = String(min1);
+
+            let ap = hour1;
+            
+            switch(hour1){
+                case 00:
+                    hour1=0;
+                    break;
+                case 01:
+                    hour1=1;
+                    break;
+                case 02:
+                    hour1=2;
+                    break;
+                case 03:
+                    hour1=3;
+                    break;
+                case 04:
+                    hour1=4;
+                    break;
+                case 05:
+                    hour1=5;
+                    break;
+                case 06:
+                    hour1=6;
+                    break;
+                case 07:
+                    hour1=7;
+                    break;
+                case 08:
+                    hour1=8;
+                    break;
+                case 09:
+                    hour1=9;
+                    break;
+                case 10:
+                    hour1=10;
+                    break;
+                case 11:
+                    hour1=11;
+                    break;
+                case 12:
+                    hour1=12;
+                    break;
+                case 13:
+                    hour1=1;
+                    break;
+                case 14:
+                    hour1=2;
+                    break;
+                case 15:
+                    hour1=3;
+                    break;
+                case 16:
+                    hour1=4;
+                    break;
+                case 17:
+                    hour1=5;
+                    break;
+                case 18:
+                    hour1=6;
+                    break;
+                case 19:
+                    hour1=7;
+                    break;
+                case 20:
+                    hour1=8;
+                    break;
+                case 21:
+                    hour1=9;
+                    break;
+                case 22:
+                    hour1=10;
+                    break;
+                case 23:
+                    hour1=11;
+                    break;
+                case 24:
+                    hour1=12;
+                    break;
+            }
+        
+
+            for(let i = 0; i<13; i++){
+                if(hour1==i){
+                    if(ap>11){
+                        document.getElementById('c12').innerHTML = pm+" "+i+"시 "+min1+"분";
+                        continue;
+                    }else{
+                        document.getElementById('c12').innerHTML = am+" "+i+"시 "+min1+"분";
+                        continue;
+                    }
+                }
+            }
+        }
+
+        function check13() {
+            let today1 = new Date();
+
+            let am = '오전';
+            let pm = '오후';
+
+            let hour1 = today1.getHours();
+            hours1 = String(hour1);
+            let min1 = today1.getMinutes();
+            mins1 = String(min1);
+
+            let ap = hour1;
+            
+            switch(hour1){
+                case 00:
+                    hour1=0;
+                    break;
+                case 01:
+                    hour1=1;
+                    break;
+                case 02:
+                    hour1=2;
+                    break;
+                case 03:
+                    hour1=3;
+                    break;
+                case 04:
+                    hour1=4;
+                    break;
+                case 05:
+                    hour1=5;
+                    break;
+                case 06:
+                    hour1=6;
+                    break;
+                case 07:
+                    hour1=7;
+                    break;
+                case 08:
+                    hour1=8;
+                    break;
+                case 09:
+                    hour1=9;
+                    break;
+                case 10:
+                    hour1=10;
+                    break;
+                case 11:
+                    hour1=11;
+                    break;
+                case 12:
+                    hour1=12;
+                    break;
+                case 13:
+                    hour1=1;
+                    break;
+                case 14:
+                    hour1=2;
+                    break;
+                case 15:
+                    hour1=3;
+                    break;
+                case 16:
+                    hour1=4;
+                    break;
+                case 17:
+                    hour1=5;
+                    break;
+                case 18:
+                    hour1=6;
+                    break;
+                case 19:
+                    hour1=7;
+                    break;
+                case 20:
+                    hour1=8;
+                    break;
+                case 21:
+                    hour1=9;
+                    break;
+                case 22:
+                    hour1=10;
+                    break;
+                case 23:
+                    hour1=11;
+                    break;
+                case 24:
+                    hour1=12;
+                    break;
+            }
+        
+
+            for(let i = 0; i<13; i++){
+                if(hour1==i){
+                    if(ap>11){
+                        document.getElementById('c13').innerHTML = pm+" "+i+"시 "+min1+"분";
+                        continue;
+                    }else{
+                        document.getElementById('c13').innerHTML = am+" "+i+"시 "+min1+"분";
+                        continue;
+                    }
+                }
+            }
+        }
+
+        function check14() {
+            let today1 = new Date();
+
+            let am = '오전';
+            let pm = '오후';
+
+            let hour1 = today1.getHours();
+            hours1 = String(hour1);
+            let min1 = today1.getMinutes();
+            mins1 = String(min1);
+
+            let ap = hour1;
+            
+            switch(hour1){
+                case 00:
+                    hour1=0;
+                    break;
+                case 01:
+                    hour1=1;
+                    break;
+                case 02:
+                    hour1=2;
+                    break;
+                case 03:
+                    hour1=3;
+                    break;
+                case 04:
+                    hour1=4;
+                    break;
+                case 05:
+                    hour1=5;
+                    break;
+                case 06:
+                    hour1=6;
+                    break;
+                case 07:
+                    hour1=7;
+                    break;
+                case 08:
+                    hour1=8;
+                    break;
+                case 09:
+                    hour1=9;
+                    break;
+                case 10:
+                    hour1=10;
+                    break;
+                case 11:
+                    hour1=11;
+                    break;
+                case 12:
+                    hour1=12;
+                    break;
+                case 13:
+                    hour1=1;
+                    break;
+                case 14:
+                    hour1=2;
+                    break;
+                case 15:
+                    hour1=3;
+                    break;
+                case 16:
+                    hour1=4;
+                    break;
+                case 17:
+                    hour1=5;
+                    break;
+                case 18:
+                    hour1=6;
+                    break;
+                case 19:
+                    hour1=7;
+                    break;
+                case 20:
+                    hour1=8;
+                    break;
+                case 21:
+                    hour1=9;
+                    break;
+                case 22:
+                    hour1=10;
+                    break;
+                case 23:
+                    hour1=11;
+                    break;
+                case 24:
+                    hour1=12;
+                    break;
+            }
+        
+
+            for(let i = 0; i<13; i++){
+                if(hour1==i){
+                    if(ap>11){
+                        document.getElementById('c14').innerHTML = pm+" "+i+"시 "+min1+"분";
+                        continue;
+                    }else{
+                        document.getElementById('c14').innerHTML = am+" "+i+"시 "+min1+"분";
+                        continue;
+                    }
+                }
+            }
+        }
+
+        function check15() {
+            let today1 = new Date();
+
+            let am = '오전';
+            let pm = '오후';
+
+            let hour1 = today1.getHours();
+            hours1 = String(hour1);
+            let min1 = today1.getMinutes();
+            mins1 = String(min1);
+
+            let ap = hour1;
+            
+            switch(hour1){
+                case 00:
+                    hour1=0;
+                    break;
+                case 01:
+                    hour1=1;
+                    break;
+                case 02:
+                    hour1=2;
+                    break;
+                case 03:
+                    hour1=3;
+                    break;
+                case 04:
+                    hour1=4;
+                    break;
+                case 05:
+                    hour1=5;
+                    break;
+                case 06:
+                    hour1=6;
+                    break;
+                case 07:
+                    hour1=7;
+                    break;
+                case 08:
+                    hour1=8;
+                    break;
+                case 09:
+                    hour1=9;
+                    break;
+                case 10:
+                    hour1=10;
+                    break;
+                case 11:
+                    hour1=11;
+                    break;
+                case 12:
+                    hour1=12;
+                    break;
+                case 13:
+                    hour1=1;
+                    break;
+                case 14:
+                    hour1=2;
+                    break;
+                case 15:
+                    hour1=3;
+                    break;
+                case 16:
+                    hour1=4;
+                    break;
+                case 17:
+                    hour1=5;
+                    break;
+                case 18:
+                    hour1=6;
+                    break;
+                case 19:
+                    hour1=7;
+                    break;
+                case 20:
+                    hour1=8;
+                    break;
+                case 21:
+                    hour1=9;
+                    break;
+                case 22:
+                    hour1=10;
+                    break;
+                case 23:
+                    hour1=11;
+                    break;
+                case 24:
+                    hour1=12;
+                    break;
+            }
+        
+
+            for(let i = 0; i<13; i++){
+                if(hour1==i){
+                    if(ap>11){
+                        document.getElementById('c15').innerHTML = pm+" "+i+"시 "+min1+"분";
+                        continue;
+                    }else{
+                        document.getElementById('c15').innerHTML = am+" "+i+"시 "+min1+"분";
+                        continue;
+                    }
+                }
+            }
+        }
+
+        function check16() {
+            let today1 = new Date();
+
+            let am = '오전';
+            let pm = '오후';
+
+            let hour1 = today1.getHours();
+            hours1 = String(hour1);
+            let min1 = today1.getMinutes();
+            mins1 = String(min1);
+
+            let ap = hour1;
+            
+            switch(hour1){
+                case 00:
+                    hour1=0;
+                    break;
+                case 01:
+                    hour1=1;
+                    break;
+                case 02:
+                    hour1=2;
+                    break;
+                case 03:
+                    hour1=3;
+                    break;
+                case 04:
+                    hour1=4;
+                    break;
+                case 05:
+                    hour1=5;
+                    break;
+                case 06:
+                    hour1=6;
+                    break;
+                case 07:
+                    hour1=7;
+                    break;
+                case 08:
+                    hour1=8;
+                    break;
+                case 09:
+                    hour1=9;
+                    break;
+                case 10:
+                    hour1=10;
+                    break;
+                case 11:
+                    hour1=11;
+                    break;
+                case 12:
+                    hour1=12;
+                    break;
+                case 13:
+                    hour1=1;
+                    break;
+                case 14:
+                    hour1=2;
+                    break;
+                case 15:
+                    hour1=3;
+                    break;
+                case 16:
+                    hour1=4;
+                    break;
+                case 17:
+                    hour1=5;
+                    break;
+                case 18:
+                    hour1=6;
+                    break;
+                case 19:
+                    hour1=7;
+                    break;
+                case 20:
+                    hour1=8;
+                    break;
+                case 21:
+                    hour1=9;
+                    break;
+                case 22:
+                    hour1=10;
+                    break;
+                case 23:
+                    hour1=11;
+                    break;
+                case 24:
+                    hour1=12;
+                    break;
+            }
+        
+
+            for(let i = 0; i<13; i++){
+                if(hour1==i){
+                    if(ap>11){
+                        document.getElementById('c16').innerHTML = pm+" "+i+"시 "+min1+"분";
+                        continue;
+                    }else{
+                        document.getElementById('c16').innerHTML = am+" "+i+"시 "+min1+"분";
+                        continue;
+                    }
+                }
+            }
+        }
+
+        function check17() {
+            let today1 = new Date();
+
+            let am = '오전';
+            let pm = '오후';
+
+            let hour1 = today1.getHours();
+            hours1 = String(hour1);
+            let min1 = today1.getMinutes();
+            mins1 = String(min1);
+
+            let ap = hour1;
+            
+            switch(hour1){
+                case 00:
+                    hour1=0;
+                    break;
+                case 01:
+                    hour1=1;
+                    break;
+                case 02:
+                    hour1=2;
+                    break;
+                case 03:
+                    hour1=3;
+                    break;
+                case 04:
+                    hour1=4;
+                    break;
+                case 05:
+                    hour1=5;
+                    break;
+                case 06:
+                    hour1=6;
+                    break;
+                case 07:
+                    hour1=7;
+                    break;
+                case 08:
+                    hour1=8;
+                    break;
+                case 09:
+                    hour1=9;
+                    break;
+                case 10:
+                    hour1=10;
+                    break;
+                case 11:
+                    hour1=11;
+                    break;
+                case 12:
+                    hour1=12;
+                    break;
+                case 13:
+                    hour1=1;
+                    break;
+                case 14:
+                    hour1=2;
+                    break;
+                case 15:
+                    hour1=3;
+                    break;
+                case 16:
+                    hour1=4;
+                    break;
+                case 17:
+                    hour1=5;
+                    break;
+                case 18:
+                    hour1=6;
+                    break;
+                case 19:
+                    hour1=7;
+                    break;
+                case 20:
+                    hour1=8;
+                    break;
+                case 21:
+                    hour1=9;
+                    break;
+                case 22:
+                    hour1=10;
+                    break;
+                case 23:
+                    hour1=11;
+                    break;
+                case 24:
+                    hour1=12;
+                    break;
+            }
+        
+
+            for(let i = 0; i<13; i++){
+                if(hour1==i){
+                    if(ap>11){
+                        document.getElementById('c17').innerHTML = pm+" "+i+"시 "+min1+"분";
+                        continue;
+                    }else{
+                        document.getElementById('c17').innerHTML = am+" "+i+"시 "+min1+"분";
+                        continue;
+                    }
+                }
+            }
+        }
+
+        function check18() {
+            let today1 = new Date();
+
+            let am = '오전';
+            let pm = '오후';
+
+            let hour1 = today1.getHours();
+            hours1 = String(hour1);
+            let min1 = today1.getMinutes();
+            mins1 = String(min1);
+
+            let ap = hour1;
+            
+            switch(hour1){
+                case 00:
+                    hour1=0;
+                    break;
+                case 01:
+                    hour1=1;
+                    break;
+                case 02:
+                    hour1=2;
+                    break;
+                case 03:
+                    hour1=3;
+                    break;
+                case 04:
+                    hour1=4;
+                    break;
+                case 05:
+                    hour1=5;
+                    break;
+                case 06:
+                    hour1=6;
+                    break;
+                case 07:
+                    hour1=7;
+                    break;
+                case 08:
+                    hour1=8;
+                    break;
+                case 09:
+                    hour1=9;
+                    break;
+                case 10:
+                    hour1=10;
+                    break;
+                case 11:
+                    hour1=11;
+                    break;
+                case 12:
+                    hour1=12;
+                    break;
+                case 13:
+                    hour1=1;
+                    break;
+                case 14:
+                    hour1=2;
+                    break;
+                case 15:
+                    hour1=3;
+                    break;
+                case 16:
+                    hour1=4;
+                    break;
+                case 17:
+                    hour1=5;
+                    break;
+                case 18:
+                    hour1=6;
+                    break;
+                case 19:
+                    hour1=7;
+                    break;
+                case 20:
+                    hour1=8;
+                    break;
+                case 21:
+                    hour1=9;
+                    break;
+                case 22:
+                    hour1=10;
+                    break;
+                case 23:
+                    hour1=11;
+                    break;
+                case 24:
+                    hour1=12;
+                    break;
+            }
+        
+
+            for(let i = 0; i<13; i++){
+                if(hour1==i){
+                    if(ap>11){
+                        document.getElementById('c18').innerHTML = pm+" "+i+"시 "+min1+"분";
+                        continue;
+                    }else{
+                        document.getElementById('c18').innerHTML = am+" "+i+"시 "+min1+"분";
+                        continue;
+                    }
+                }
+            }
+        }
+
+        function check19() {
+            let today1 = new Date();
+
+            let am = '오전';
+            let pm = '오후';
+
+            let hour1 = today1.getHours();
+            hours1 = String(hour1);
+            let min1 = today1.getMinutes();
+            mins1 = String(min1);
+
+            let ap = hour1;
+            
+            switch(hour1){
+                case 00:
+                    hour1=0;
+                    break;
+                case 01:
+                    hour1=1;
+                    break;
+                case 02:
+                    hour1=2;
+                    break;
+                case 03:
+                    hour1=3;
+                    break;
+                case 04:
+                    hour1=4;
+                    break;
+                case 05:
+                    hour1=5;
+                    break;
+                case 06:
+                    hour1=6;
+                    break;
+                case 07:
+                    hour1=7;
+                    break;
+                case 08:
+                    hour1=8;
+                    break;
+                case 09:
+                    hour1=9;
+                    break;
+                case 10:
+                    hour1=10;
+                    break;
+                case 11:
+                    hour1=11;
+                    break;
+                case 12:
+                    hour1=12;
+                    break;
+                case 13:
+                    hour1=1;
+                    break;
+                case 14:
+                    hour1=2;
+                    break;
+                case 15:
+                    hour1=3;
+                    break;
+                case 16:
+                    hour1=4;
+                    break;
+                case 17:
+                    hour1=5;
+                    break;
+                case 18:
+                    hour1=6;
+                    break;
+                case 19:
+                    hour1=7;
+                    break;
+                case 20:
+                    hour1=8;
+                    break;
+                case 21:
+                    hour1=9;
+                    break;
+                case 22:
+                    hour1=10;
+                    break;
+                case 23:
+                    hour1=11;
+                    break;
+                case 24:
+                    hour1=12;
+                    break;
+            }
+        
+
+            for(let i = 0; i<13; i++){
+                if(hour1==i){
+                    if(ap>11){
+                        document.getElementById('c19').innerHTML = pm+" "+i+"시 "+min1+"분";
+                        continue;
+                    }else{
+                        document.getElementById('c19').innerHTML = am+" "+i+"시 "+min1+"분";
+                        continue;
+                    }
+                }
+            }
+        }
+
+        function check20() {
+            let today1 = new Date();
+
+            let am = '오전';
+            let pm = '오후';
+
+            let hour1 = today1.getHours();
+            hours1 = String(hour1);
+            let min1 = today1.getMinutes();
+            mins1 = String(min1);
+
+            let ap = hour1;
+            
+            switch(hour1){
+                case 00:
+                    hour1=0;
+                    break;
+                case 01:
+                    hour1=1;
+                    break;
+                case 02:
+                    hour1=2;
+                    break;
+                case 03:
+                    hour1=3;
+                    break;
+                case 04:
+                    hour1=4;
+                    break;
+                case 05:
+                    hour1=5;
+                    break;
+                case 06:
+                    hour1=6;
+                    break;
+                case 07:
+                    hour1=7;
+                    break;
+                case 08:
+                    hour1=8;
+                    break;
+                case 09:
+                    hour1=9;
+                    break;
+                case 10:
+                    hour1=10;
+                    break;
+                case 11:
+                    hour1=11;
+                    break;
+                case 12:
+                    hour1=12;
+                    break;
+                case 13:
+                    hour1=1;
+                    break;
+                case 14:
+                    hour1=2;
+                    break;
+                case 15:
+                    hour1=3;
+                    break;
+                case 16:
+                    hour1=4;
+                    break;
+                case 17:
+                    hour1=5;
+                    break;
+                case 18:
+                    hour1=6;
+                    break;
+                case 19:
+                    hour1=7;
+                    break;
+                case 20:
+                    hour1=8;
+                    break;
+                case 21:
+                    hour1=9;
+                    break;
+                case 22:
+                    hour1=10;
+                    break;
+                case 23:
+                    hour1=11;
+                    break;
+                case 24:
+                    hour1=12;
+                    break;
+            }
+        
+
+            for(let i = 0; i<13; i++){
+                if(hour1==i){
+                    if(ap>11){
+                        document.getElementById('c20').innerHTML = pm+" "+i+"시 "+min1+"분";
+                        continue;
+                    }else{
+                        document.getElementById('c20').innerHTML = am+" "+i+"시 "+min1+"분";
+                        continue;
+                    }
+                }
+            }
+        }
+
+        function check21() {
+            let today1 = new Date();
+
+            let am = '오전';
+            let pm = '오후';
+
+            let hour1 = today1.getHours();
+            hours1 = String(hour1);
+            let min1 = today1.getMinutes();
+            mins1 = String(min1);
+
+            let ap = hour1;
+            
+            switch(hour1){
+                case 00:
+                    hour1=0;
+                    break;
+                case 01:
+                    hour1=1;
+                    break;
+                case 02:
+                    hour1=2;
+                    break;
+                case 03:
+                    hour1=3;
+                    break;
+                case 04:
+                    hour1=4;
+                    break;
+                case 05:
+                    hour1=5;
+                    break;
+                case 06:
+                    hour1=6;
+                    break;
+                case 07:
+                    hour1=7;
+                    break;
+                case 08:
+                    hour1=8;
+                    break;
+                case 09:
+                    hour1=9;
+                    break;
+                case 10:
+                    hour1=10;
+                    break;
+                case 11:
+                    hour1=11;
+                    break;
+                case 12:
+                    hour1=12;
+                    break;
+                case 13:
+                    hour1=1;
+                    break;
+                case 14:
+                    hour1=2;
+                    break;
+                case 15:
+                    hour1=3;
+                    break;
+                case 16:
+                    hour1=4;
+                    break;
+                case 17:
+                    hour1=5;
+                    break;
+                case 18:
+                    hour1=6;
+                    break;
+                case 19:
+                    hour1=7;
+                    break;
+                case 20:
+                    hour1=8;
+                    break;
+                case 21:
+                    hour1=9;
+                    break;
+                case 22:
+                    hour1=10;
+                    break;
+                case 23:
+                    hour1=11;
+                    break;
+                case 24:
+                    hour1=12;
+                    break;
+            }
+        
+
+            for(let i = 0; i<13; i++){
+                if(hour1==i){
+                    if(ap>11){
+                        document.getElementById('c21').innerHTML = pm+" "+i+"시 "+min1+"분";
+                        continue;
+                    }else{
+                        document.getElementById('c21').innerHTML = am+" "+i+"시 "+min1+"분";
+                        continue;
+                    }
+                }
+            }
+        }
+        function search1(){
+            let today1 = new Date();
+
+            let hour1 = today1.getHours();
+            hour1 = String(hour1);
+            let min1 = today1.getMinutes();
+
+            switch(min1){
+                case 0:
+                    min1 = "00";
+                    break;
+                case 1:
+                    min1 = "01";
+                    break;
+                case 2:
+                    min1 = "02";
+                    break;
+                case 3:
+                    min1 = "03";
+                    break;
+                case 4:
+                    min1 = "04";
+                    break;
+                case 5:
+                    min1 = "05";
+                    break;
+                case 6:
+                    min1 = "06";
+                    break;
+                case 7:
+                    min1 = "07";
+                    break;
+                case 8:
+                    min1 = "08";
+                    break;
+                case 9:
+                    min1 = "09";
+                    break;
+            }
+            min1 = String(min1);
+
+            stri = hour1+min1;
+            stri = Number(stri);
+
+            if(stri>0820){
+                document.getElementById('b1').innerText = "지각";
+            }else{
+                document.getElementById('b1').innerText = "세이프";
+            }
+        }
+
+        function search2(){
+            let today1 = new Date();
+
+            let hour1 = today1.getHours();
+            hour1 = String(hour1);
+            let min1 = today1.getMinutes();
+            switch(min1){
+                case 0:
+                    min1 = "00";
+                    break;
+                case 1:
+                    min1 = "01";
+                    break;
+                case 2:
+                    min1 = "02";
+                    break;
+                case 3:
+                    min1 = "03";
+                    break;
+                case 4:
+                    min1 = "04";
+                    break;
+                case 5:
+                    min1 = "05";
+                    break;
+                case 6:
+                    min1 = "06";
+                    break;
+                case 7:
+                    min1 = "07";
+                    break;
+                case 8:
+                    min1 = "08";
+                    break;
+                case 9:
+                    min1 = "09";
+                    break;
+            }
+            min1 = String(min1);
+
+            stri = hour1+min1;
+            stri = Number(stri);
+
+            if(stri>0820){
+                document.getElementById('b2').innerText = "지각";
+            }else{
+                document.getElementById('b2').innerText = "세이프";
+            }
+        }
+
+        function search3(){
+            let today1 = new Date();
+
+            let hour1 = today1.getHours();
+            hour1 = String(hour1);
+            let min1 = today1.getMinutes();
+            switch(min1){
+                case 0:
+                    min1 = "00";
+                    break;
+                case 1:
+                    min1 = "01";
+                    break;
+                case 2:
+                    min1 = "02";
+                    break;
+                case 3:
+                    min1 = "03";
+                    break;
+                case 4:
+                    min1 = "04";
+                    break;
+                case 5:
+                    min1 = "05";
+                    break;
+                case 6:
+                    min1 = "06";
+                    break;
+                case 7:
+                    min1 = "07";
+                    break;
+                case 8:
+                    min1 = "08";
+                    break;
+                case 9:
+                    min1 = "09";
+                    break;
+            }
+            min1 = String(min1);
+
+            stri = hour1+min1;
+            stri = Number(stri);
+
+            if(stri>0820){
+                document.getElementById('b3').innerText = "지각";
+            }else{
+                document.getElementById('b3').innerText = "세이프";
+            }
+        }
+
+        function search4(){
+            let today1 = new Date();
+
+            let hour1 = today1.getHours();
+            hour1 = String(hour1);
+            let min1 = today1.getMinutes();
+            switch(min1){
+                case 0:
+                    min1 = "00";
+                    break;
+                case 1:
+                    min1 = "01";
+                    break;
+                case 2:
+                    min1 = "02";
+                    break;
+                case 3:
+                    min1 = "03";
+                    break;
+                case 4:
+                    min1 = "04";
+                    break;
+                case 5:
+                    min1 = "05";
+                    break;
+                case 6:
+                    min1 = "06";
+                    break;
+                case 7:
+                    min1 = "07";
+                    break;
+                case 8:
+                    min1 = "08";
+                    break;
+                case 9:
+                    min1 = "09";
+                    break;
+            }
+            min1 = String(min1);
+
+            stri = hour1+min1;
+            stri = Number(stri);
+
+            if(stri>0820){
+                document.getElementById('b4').innerText = "지각";
+            }else{
+                document.getElementById('b4').innerText = "세이프";
+            }
+        }
+
+        function search5(){
+            let today1 = new Date();
+
+            let hour1 = today1.getHours();
+            hour1 = String(hour1);
+            let min1 = today1.getMinutes();
+            switch(min1){
+                case 0:
+                    min1 = "00";
+                    break;
+                case 1:
+                    min1 = "01";
+                    break;
+                case 2:
+                    min1 = "02";
+                    break;
+                case 3:
+                    min1 = "03";
+                    break;
+                case 4:
+                    min1 = "04";
+                    break;
+                case 5:
+                    min1 = "05";
+                    break;
+                case 6:
+                    min1 = "06";
+                    break;
+                case 7:
+                    min1 = "07";
+                    break;
+                case 8:
+                    min1 = "08";
+                    break;
+                case 9:
+                    min1 = "09";
+                    break;
+            }
+            min1 = String(min1);
+
+            stri = hour1+min1;
+            stri = Number(stri);
+
+            if(stri>0820){
+                document.getElementById('b5').innerText = "지각";
+            }else{
+                document.getElementById('b5').innerText = "세이프";
+            }
+        }
+
+        function search6(){
+            let today1 = new Date();
+
+            let hour1 = today1.getHours();
+            hour1 = String(hour1);
+            let min1 = today1.getMinutes();
+            switch(min1){
+                case 0:
+                    min1 = "00";
+                    break;
+                case 1:
+                    min1 = "01";
+                    break;
+                case 2:
+                    min1 = "02";
+                    break;
+                case 3:
+                    min1 = "03";
+                    break;
+                case 4:
+                    min1 = "04";
+                    break;
+                case 5:
+                    min1 = "05";
+                    break;
+                case 6:
+                    min1 = "06";
+                    break;
+                case 7:
+                    min1 = "07";
+                    break;
+                case 8:
+                    min1 = "08";
+                    break;
+                case 9:
+                    min1 = "09";
+                    break;
+            }
+            min1 = String(min1);
+
+            stri = hour1+min1;
+            stri = Number(stri);
+
+            if(stri>0820){
+                document.getElementById('b6').innerText = "지각";
+            }else{
+                document.getElementById('b6').innerText = "세이프";
+            }
+        }
+
+        function search7(){
+            let today1 = new Date();
+
+            let hour1 = today1.getHours();
+            hour1 = String(hour1);
+            let min1 = today1.getMinutes();
+            switch(min1){
+                case 0:
+                    min1 = "00";
+                    break;
+                case 1:
+                    min1 = "01";
+                    break;
+                case 2:
+                    min1 = "02";
+                    break;
+                case 3:
+                    min1 = "03";
+                    break;
+                case 4:
+                    min1 = "04";
+                    break;
+                case 5:
+                    min1 = "05";
+                    break;
+                case 6:
+                    min1 = "06";
+                    break;
+                case 7:
+                    min1 = "07";
+                    break;
+                case 8:
+                    min1 = "08";
+                    break;
+                case 9:
+                    min1 = "09";
+                    break;
+            }
+            min1 = String(min1);
+
+            stri = hour1+min1;
+            stri = Number(stri);
+
+            if(stri>0820){
+                document.getElementById('b7').innerText = "지각";
+            }else{
+                document.getElementById('b7').innerText = "세이프";
+            }
+        }
+
+        function search8(){
+            let today1 = new Date();
+
+            let hour1 = today1.getHours();
+            hour1 = String(hour1);
+            let min1 = today1.getMinutes();
+            switch(min1){
+                case 0:
+                    min1 = "00";
+                    break;
+                case 1:
+                    min1 = "01";
+                    break;
+                case 2:
+                    min1 = "02";
+                    break;
+                case 3:
+                    min1 = "03";
+                    break;
+                case 4:
+                    min1 = "04";
+                    break;
+                case 5:
+                    min1 = "05";
+                    break;
+                case 6:
+                    min1 = "06";
+                    break;
+                case 7:
+                    min1 = "07";
+                    break;
+                case 8:
+                    min1 = "08";
+                    break;
+                case 9:
+                    min1 = "09";
+                    break;
+            }
+            min1 = String(min1);
+
+            stri = hour1+min1;
+            stri = Number(stri);
+
+            if(stri>0820){
+                document.getElementById('b8').innerText = "지각";
+            }else{
+                document.getElementById('b8').innerText = "세이프";
+            }
+        }
+
+        function search9(){
+            let today1 = new Date();
+
+            let hour1 = today1.getHours();
+            hour1 = String(hour1);
+            let min1 = today1.getMinutes();
+            switch(min1){
+                case 0:
+                    min1 = "00";
+                    break;
+                case 1:
+                    min1 = "01";
+                    break;
+                case 2:
+                    min1 = "02";
+                    break;
+                case 3:
+                    min1 = "03";
+                    break;
+                case 4:
+                    min1 = "04";
+                    break;
+                case 5:
+                    min1 = "05";
+                    break;
+                case 6:
+                    min1 = "06";
+                    break;
+                case 7:
+                    min1 = "07";
+                    break;
+                case 8:
+                    min1 = "08";
+                    break;
+                case 9:
+                    min1 = "09";
+                    break;
+            }
+            min1 = String(min1);
+
+            stri = hour1+min1;
+            stri = Number(stri);
+
+            if(stri>0820){
+                document.getElementById('b9').innerText = "지각";
+            }else{
+                document.getElementById('b9').innerText = "세이프";
+            }
+        }
+
+        function search10(){
+            let today1 = new Date();
+
+            let hour1 = today1.getHours();
+            hour1 = String(hour1);
+            let min1 = today1.getMinutes();
+            switch(min1){
+                case 0:
+                    min1 = "00";
+                    break;
+                case 1:
+                    min1 = "01";
+                    break;
+                case 2:
+                    min1 = "02";
+                    break;
+                case 3:
+                    min1 = "03";
+                    break;
+                case 4:
+                    min1 = "04";
+                    break;
+                case 5:
+                    min1 = "05";
+                    break;
+                case 6:
+                    min1 = "06";
+                    break;
+                case 7:
+                    min1 = "07";
+                    break;
+                case 8:
+                    min1 = "08";
+                    break;
+                case 9:
+                    min1 = "09";
+                    break;
+            }
+            min1 = String(min1);
+
+            stri = hour1+min1;
+            stri = Number(stri);
+
+            if(stri>0820){
+                document.getElementById('b10').innerText = "지각";
+            }else{
+                document.getElementById('b10').innerText = "세이프";
+            }
+        }
+
+        function search11(){
+            let today1 = new Date();
+
+            let hour1 = today1.getHours();
+            hour1 = String(hour1);
+            let min1 = today1.getMinutes();
+            switch(min1){
+                case 0:
+                    min1 = "00";
+                    break;
+                case 1:
+                    min1 = "01";
+                    break;
+                case 2:
+                    min1 = "02";
+                    break;
+                case 3:
+                    min1 = "03";
+                    break;
+                case 4:
+                    min1 = "04";
+                    break;
+                case 5:
+                    min1 = "05";
+                    break;
+                case 6:
+                    min1 = "06";
+                    break;
+                case 7:
+                    min1 = "07";
+                    break;
+                case 8:
+                    min1 = "08";
+                    break;
+                case 9:
+                    min1 = "09";
+                    break;
+            }
+            min1 = String(min1);
+
+            stri = hour1+min1;
+            stri = Number(stri);
+
+            if(stri>0820){
+                document.getElementById('b11').innerText = "지각";
+            }else{
+                document.getElementById('b11').innerText = "세이프";
+            }
+        }
+
+        function search12(){
+            let today1 = new Date();
+
+            let hour1 = today1.getHours();
+            hour1 = String(hour1);
+            let min1 = today1.getMinutes();
+            switch(min1){
+                case 0:
+                    min1 = "00";
+                    break;
+                case 1:
+                    min1 = "01";
+                    break;
+                case 2:
+                    min1 = "02";
+                    break;
+                case 3:
+                    min1 = "03";
+                    break;
+                case 4:
+                    min1 = "04";
+                    break;
+                case 5:
+                    min1 = "05";
+                    break;
+                case 6:
+                    min1 = "06";
+                    break;
+                case 7:
+                    min1 = "07";
+                    break;
+                case 8:
+                    min1 = "08";
+                    break;
+                case 9:
+                    min1 = "09";
+                    break;
+            }
+            min1 = String(min1);
+
+            stri = hour1+min1;
+            stri = Number(stri);
+
+            if(stri>0820){
+                document.getElementById('b12').innerText = "지각";
+            }else{
+                document.getElementById('b12').innerText = "세이프";
+            }
+        }
+
+        function search13(){
+            let today1 = new Date();
+
+            let hour1 = today1.getHours();
+            hour1 = String(hour1);
+            let min1 = today1.getMinutes();
+            switch(min1){
+                case 0:
+                    min1 = "00";
+                    break;
+                case 1:
+                    min1 = "01";
+                    break;
+                case 2:
+                    min1 = "02";
+                    break;
+                case 3:
+                    min1 = "03";
+                    break;
+                case 4:
+                    min1 = "04";
+                    break;
+                case 5:
+                    min1 = "05";
+                    break;
+                case 6:
+                    min1 = "06";
+                    break;
+                case 7:
+                    min1 = "07";
+                    break;
+                case 8:
+                    min1 = "08";
+                    break;
+                case 9:
+                    min1 = "09";
+                    break;
+            }
+            min1 = String(min1);
+
+            stri = hour1+min1;
+            stri = Number(stri);
+
+            if(stri>0820){
+                document.getElementById('b13').innerText = "지각";
+            }else{
+                document.getElementById('b13').innerText = "세이프";
+            }
+        }
+
+        function search14(){
+            let today1 = new Date();
+
+            let hour1 = today1.getHours();
+            hour1 = String(hour1);
+            let min1 = today1.getMinutes();
+            switch(min1){
+                case 0:
+                    min1 = "00";
+                    break;
+                case 1:
+                    min1 = "01";
+                    break;
+                case 2:
+                    min1 = "02";
+                    break;
+                case 3:
+                    min1 = "03";
+                    break;
+                case 4:
+                    min1 = "04";
+                    break;
+                case 5:
+                    min1 = "05";
+                    break;
+                case 6:
+                    min1 = "06";
+                    break;
+                case 7:
+                    min1 = "07";
+                    break;
+                case 8:
+                    min1 = "08";
+                    break;
+                case 9:
+                    min1 = "09";
+                    break;
+            }
+            min1 = String(min1);
+
+            stri = hour1+min1;
+            stri = Number(stri);
+
+            if(stri>0820){
+                document.getElementById('b14').innerText = "지각";
+            }else{
+                document.getElementById('b14').innerText = "세이프";
+            }
+        }
+
+        function search15(){
+            let today1 = new Date();
+
+            let hour1 = today1.getHours();
+            hour1 = String(hour1);
+            let min1 = today1.getMinutes();
+            switch(min1){
+                case 0:
+                    min1 = "00";
+                    break;
+                case 1:
+                    min1 = "01";
+                    break;
+                case 2:
+                    min1 = "02";
+                    break;
+                case 3:
+                    min1 = "03";
+                    break;
+                case 4:
+                    min1 = "04";
+                    break;
+                case 5:
+                    min1 = "05";
+                    break;
+                case 6:
+                    min1 = "06";
+                    break;
+                case 7:
+                    min1 = "07";
+                    break;
+                case 8:
+                    min1 = "08";
+                    break;
+                case 9:
+                    min1 = "09";
+                    break;
+            }
+            min1 = String(min1);
+
+            stri = hour1+min1;
+            stri = Number(stri);
+
+            if(stri>0820){
+                document.getElementById('b15').innerText = "지각";
+            }else{
+                document.getElementById('b15').innerText = "세이프";
+            }
+        }
+
+        function search16(){
+            let today1 = new Date();
+
+            let hour1 = today1.getHours();
+            hour1 = String(hour1);
+            let min1 = today1.getMinutes();
+            switch(min1){
+                case 0:
+                    min1 = "00";
+                    break;
+                case 1:
+                    min1 = "01";
+                    break;
+                case 2:
+                    min1 = "02";
+                    break;
+                case 3:
+                    min1 = "03";
+                    break;
+                case 4:
+                    min1 = "04";
+                    break;
+                case 5:
+                    min1 = "05";
+                    break;
+                case 6:
+                    min1 = "06";
+                    break;
+                case 7:
+                    min1 = "07";
+                    break;
+                case 8:
+                    min1 = "08";
+                    break;
+                case 9:
+                    min1 = "09";
+                    break;
+            }
+            min1 = String(min1);
+
+            stri = hour1+min1;
+            stri = Number(stri);
+
+            if(stri>0820){
+                document.getElementById('b16').innerText = "지각";
+            }else{
+                document.getElementById('b16').innerText = "세이프";
+            }
+        }
+
+        function search17(){
+            let today1 = new Date();
+
+            let hour1 = today1.getHours();
+            hour1 = String(hour1);
+            let min1 = today1.getMinutes();
+            switch(min1){
+                case 0:
+                    min1 = "00";
+                    break;
+                case 1:
+                    min1 = "01";
+                    break;
+                case 2:
+                    min1 = "02";
+                    break;
+                case 3:
+                    min1 = "03";
+                    break;
+                case 4:
+                    min1 = "04";
+                    break;
+                case 5:
+                    min1 = "05";
+                    break;
+                case 6:
+                    min1 = "06";
+                    break;
+                case 7:
+                    min1 = "07";
+                    break;
+                case 8:
+                    min1 = "08";
+                    break;
+                case 9:
+                    min1 = "09";
+                    break;
+            }
+            min1 = String(min1);
+
+            stri = hour1+min1;
+            stri = Number(stri);
+
+            if(stri>0820){
+                document.getElementById('b17').innerText = "지각";
+            }else{
+                document.getElementById('b17').innerText = "세이프";
+            }
+        }
+
+        function search18(){
+            let today1 = new Date();
+
+            let hour1 = today1.getHours();
+            hour1 = String(hour1);
+            let min1 = today1.getMinutes();
+            switch(min1){
+                case 0:
+                    min1 = "00";
+                    break;
+                case 1:
+                    min1 = "01";
+                    break;
+                case 2:
+                    min1 = "02";
+                    break;
+                case 3:
+                    min1 = "03";
+                    break;
+                case 4:
+                    min1 = "04";
+                    break;
+                case 5:
+                    min1 = "05";
+                    break;
+                case 6:
+                    min1 = "06";
+                    break;
+                case 7:
+                    min1 = "07";
+                    break;
+                case 8:
+                    min1 = "08";
+                    break;
+                case 9:
+                    min1 = "09";
+                    break;
+            }
+            min1 = String(min1);
+
+            stri = hour1+min1;
+            stri = Number(stri);
+
+            if(stri>0820){
+                document.getElementById('b18').innerText = "지각";
+            }else{
+                document.getElementById('b18').innerText = "세이프";
+            }
+        }
+
+        function search19(){
+            let today1 = new Date();
+
+            let hour1 = today1.getHours();
+            hour1 = String(hour1);
+            let min1 = today1.getMinutes();
+            switch(min1){
+                case 0:
+                    min1 = "00";
+                    break;
+                case 1:
+                    min1 = "01";
+                    break;
+                case 2:
+                    min1 = "02";
+                    break;
+                case 3:
+                    min1 = "03";
+                    break;
+                case 4:
+                    min1 = "04";
+                    break;
+                case 5:
+                    min1 = "05";
+                    break;
+                case 6:
+                    min1 = "06";
+                    break;
+                case 7:
+                    min1 = "07";
+                    break;
+                case 8:
+                    min1 = "08";
+                    break;
+                case 9:
+                    min1 = "09";
+                    break;
+            }
+            min1 = String(min1);
+
+            stri = hour1+min1;
+            stri = Number(stri);
+
+            if(stri>0820){
+                document.getElementById('b19').innerText = "지각";
+            }else{
+                document.getElementById('b19').innerText = "세이프";
+            }
+        }
+
+        function search20(){
+            let today1 = new Date();
+
+            let hour1 = today1.getHours();
+            hour1 = String(hour1);
+            let min1 = today1.getMinutes();
+            switch(min1){
+                case 0:
+                    min1 = "00";
+                    break;
+                case 1:
+                    min1 = "01";
+                    break;
+                case 2:
+                    min1 = "02";
+                    break;
+                case 3:
+                    min1 = "03";
+                    break;
+                case 4:
+                    min1 = "04";
+                    break;
+                case 5:
+                    min1 = "05";
+                    break;
+                case 6:
+                    min1 = "06";
+                    break;
+                case 7:
+                    min1 = "07";
+                    break;
+                case 8:
+                    min1 = "08";
+                    break;
+                case 9:
+                    min1 = "09";
+                    break;
+            }
+            min1 = String(min1);
+
+            stri = hour1+min1;
+            stri = Number(stri);
+
+            if(stri>0820){
+                document.getElementById('b20').innerText = "지각";
+            }else{
+                document.getElementById('b20').innerText = "세이프";
+            }
+        }
+
+        function search21(){
+            let today1 = new Date();
+
+            let hour1 = today1.getHours();
+            hour1 = String(hour1);
+            let min1 = today1.getMinutes();
+            switch(min1){
+                case 0:
+                    min1 = "00";
+                    break;
+                case 1:
+                    min1 = "01";
+                    break;
+                case 2:
+                    min1 = "02";
+                    break;
+                case 3:
+                    min1 = "03";
+                    break;
+                case 4:
+                    min1 = "04";
+                    break;
+                case 5:
+                    min1 = "05";
+                    break;
+                case 6:
+                    min1 = "06";
+                    break;
+                case 7:
+                    min1 = "07";
+                    break;
+                case 8:
+                    min1 = "08";
+                    break;
+                case 9:
+                    min1 = "09";
+                    break;
+            }
+            min1 = String(min1);
+
+            stri = hour1+min1;
+            stri = Number(stri);
+
+            if(stri>0820){
+                document.getElementById('b21').innerText = "지각";
+            }else{
+                document.getElementById('b21').innerText = "세이프";
+            }
+        }
+
+        function later1(){
+            let today1 = new Date();
+
+            let hour1 = today1.getHours();
+            hour1 = String(hour1);
+            let min1 = today1.getMinutes();
+            switch(min1){
+                case 0:
+                    min1 = "00";
+                    break;
+                case 1:
+                    min1 = "01";
+                    break;
+                case 2:
+                    min1 = "02";
+                    break;
+                case 3:
+                    min1 = "03";
+                    break;
+                case 4:
+                    min1 = "04";
+                    break;
+                case 5:
+                    min1 = "05";
+                    break;
+                case 6:
+                    min1 = "06";
+                    break;
+                case 7:
+                    min1 = "07";
+                    break;
+                case 8:
+                    min1 = "08";
+                    break;
+                case 9:
+                    min1 = "09";
+                    break;
+            }
+            min1 = String(min1);
+
+            stri = hour1+min1;
+            stri = Number(stri);
+
+            if(stri>0820){
+                document.getElementById('trad').innerHTML += "<span> </span>";
+        }
+    }
+    function later2(){
+            let today1 = new Date();
+
+            let hour1 = today1.getHours();
+            hour1 = String(hour1);
+            let min1 = today1.getMinutes();
+            switch(min1){
+                case 0:
+                    min1 = "00";
+                    break;
+                case 1:
+                    min1 = "01";
+                    break;
+                case 2:
+                    min1 = "02";
+                    break;
+                case 3:
+                    min1 = "03";
+                    break;
+                case 4:
+                    min1 = "04";
+                    break;
+                case 5:
+                    min1 = "05";
+                    break;
+                case 6:
+                    min1 = "06";
+                    break;
+                case 7:
+                    min1 = "07";
+                    break;
+                case 8:
+                    min1 = "08";
+                    break;
+                case 9:
+                    min1 = "09";
+                    break;
+            }
+            min1 = String(min1);
+
+            stri = hour1+min1;
+            stri = Number(stri);
+
+            if(stri>0820){
+                document.getElementById('trad').innerHTML += "<span> </span>";
+        }
+    }
+
+    function later3(){
+            let today1 = new Date();
+
+            let hour1 = today1.getHours();
+            hour1 = String(hour1);
+            let min1 = today1.getMinutes();
+            switch(min1){
+                case 0:
+                    min1 = "00";
+                    break;
+                case 1:
+                    min1 = "01";
+                    break;
+                case 2:
+                    min1 = "02";
+                    break;
+                case 3:
+                    min1 = "03";
+                    break;
+                case 4:
+                    min1 = "04";
+                    break;
+                case 5:
+                    min1 = "05";
+                    break;
+                case 6:
+                    min1 = "06";
+                    break;
+                case 7:
+                    min1 = "07";
+                    break;
+                case 8:
+                    min1 = "08";
+                    break;
+                case 9:
+                    min1 = "09";
+                    break;
+            }
+            min1 = String(min1);
+
+            stri = hour1+min1;
+            stri = Number(stri);
+
+            if(stri>0820){
+                document.getElementById('trad').innerHTML += "<span> </span>";
+        }
+    }
+
+    function later4(){
+            let today1 = new Date();
+
+            let hour1 = today1.getHours();
+            hour1 = String(hour1);
+            let min1 = today1.getMinutes();
+            switch(min1){
+                case 0:
+                    min1 = "00";
+                    break;
+                case 1:
+                    min1 = "01";
+                    break;
+                case 2:
+                    min1 = "02";
+                    break;
+                case 3:
+                    min1 = "03";
+                    break;
+                case 4:
+                    min1 = "04";
+                    break;
+                case 5:
+                    min1 = "05";
+                    break;
+                case 6:
+                    min1 = "06";
+                    break;
+                case 7:
+                    min1 = "07";
+                    break;
+                case 8:
+                    min1 = "08";
+                    break;
+                case 9:
+                    min1 = "09";
+                    break;
+            }
+            min1 = String(min1);
+
+            stri = hour1+min1;
+            stri = Number(stri);
+
+            if(stri>0820){
+                document.getElementById('trad').innerHTML += "<span> </span>";
+        }
+    }
+
+    function later5(){
+            let today1 = new Date();
+
+            let hour1 = today1.getHours();
+            hour1 = String(hour1);
+            let min1 = today1.getMinutes();
+            switch(min1){
+                case 0:
+                    min1 = "00";
+                    break;
+                case 1:
+                    min1 = "01";
+                    break;
+                case 2:
+                    min1 = "02";
+                    break;
+                case 3:
+                    min1 = "03";
+                    break;
+                case 4:
+                    min1 = "04";
+                    break;
+                case 5:
+                    min1 = "05";
+                    break;
+                case 6:
+                    min1 = "06";
+                    break;
+                case 7:
+                    min1 = "07";
+                    break;
+                case 8:
+                    min1 = "08";
+                    break;
+                case 9:
+                    min1 = "09";
+                    break;
+            }
+            min1 = String(min1);
+
+            stri = hour1+min1;
+            stri = Number(stri);
+
+            if(stri>0820){
+                document.getElementById('trad').innerHTML += "<span> </span>";
+        }
+    }
+
+    function later6(){
+            let today1 = new Date();
+
+            let hour1 = today1.getHours();
+            hour1 = String(hour1);
+            let min1 = today1.getMinutes();
+            switch(min1){
+                case 0:
+                    min1 = "00";
+                    break;
+                case 1:
+                    min1 = "01";
+                    break;
+                case 2:
+                    min1 = "02";
+                    break;
+                case 3:
+                    min1 = "03";
+                    break;
+                case 4:
+                    min1 = "04";
+                    break;
+                case 5:
+                    min1 = "05";
+                    break;
+                case 6:
+                    min1 = "06";
+                    break;
+                case 7:
+                    min1 = "07";
+                    break;
+                case 8:
+                    min1 = "08";
+                    break;
+                case 9:
+                    min1 = "09";
+                    break;
+            }
+            min1 = String(min1);
+
+            stri = hour1+min1;
+            stri = Number(stri);
+
+            if(stri>0820){
+                document.getElementById('trad').innerHTML += "<span> </span>";
+        }
+    }
+
+    function later7(){
+            let today1 = new Date();
+
+            let hour1 = today1.getHours();
+            hour1 = String(hour1);
+            let min1 = today1.getMinutes();
+            switch(min1){
+                case 0:
+                    min1 = "00";
+                    break;
+                case 1:
+                    min1 = "01";
+                    break;
+                case 2:
+                    min1 = "02";
+                    break;
+                case 3:
+                    min1 = "03";
+                    break;
+                case 4:
+                    min1 = "04";
+                    break;
+                case 5:
+                    min1 = "05";
+                    break;
+                case 6:
+                    min1 = "06";
+                    break;
+                case 7:
+                    min1 = "07";
+                    break;
+                case 8:
+                    min1 = "08";
+                    break;
+                case 9:
+                    min1 = "09";
+                    break;
+            }
+            min1 = String(min1);
+
+            stri = hour1+min1;
+            stri = Number(stri);
+
+            if(stri>0820){
+                document.getElementById('trad').innerHTML += "<span> </span>";
+        }
+    }
+
+    function later8(){
+            let today1 = new Date();
+
+            let hour1 = today1.getHours();
+            hour1 = String(hour1);
+            let min1 = today1.getMinutes();
+            switch(min1){
+                case 0:
+                    min1 = "00";
+                    break;
+                case 1:
+                    min1 = "01";
+                    break;
+                case 2:
+                    min1 = "02";
+                    break;
+                case 3:
+                    min1 = "03";
+                    break;
+                case 4:
+                    min1 = "04";
+                    break;
+                case 5:
+                    min1 = "05";
+                    break;
+                case 6:
+                    min1 = "06";
+                    break;
+                case 7:
+                    min1 = "07";
+                    break;
+                case 8:
+                    min1 = "08";
+                    break;
+                case 9:
+                    min1 = "09";
+                    break;
+            }
+            min1 = String(min1);
+
+            stri = hour1+min1;
+            stri = Number(stri);
+
+            if(stri>0820){
+                document.getElementById('trad').innerHTML += "<span> </span>";
+        }
+    }
+
+    function later9(){
+            let today1 = new Date();
+
+            let hour1 = today1.getHours();
+            hour1 = String(hour1);
+            let min1 = today1.getMinutes();
+            switch(min1){
+                case 0:
+                    min1 = "00";
+                    break;
+                case 1:
+                    min1 = "01";
+                    break;
+                case 2:
+                    min1 = "02";
+                    break;
+                case 3:
+                    min1 = "03";
+                    break;
+                case 4:
+                    min1 = "04";
+                    break;
+                case 5:
+                    min1 = "05";
+                    break;
+                case 6:
+                    min1 = "06";
+                    break;
+                case 7:
+                    min1 = "07";
+                    break;
+                case 8:
+                    min1 = "08";
+                    break;
+                case 9:
+                    min1 = "09";
+                    break;
+            }
+            min1 = String(min1);
+
+            stri = hour1+min1;
+            stri = Number(stri);
+
+            if(stri>0820){
+                document.getElementById('trad').innerHTML += "<span> </span>";
+        }
+    }
+
+    function later10(){
+            let today1 = new Date();
+
+            let hour1 = today1.getHours();
+            hour1 = String(hour1);
+            let min1 = today1.getMinutes();
+            switch(min1){
+                case 0:
+                    min1 = "00";
+                    break;
+                case 1:
+                    min1 = "01";
+                    break;
+                case 2:
+                    min1 = "02";
+                    break;
+                case 3:
+                    min1 = "03";
+                    break;
+                case 4:
+                    min1 = "04";
+                    break;
+                case 5:
+                    min1 = "05";
+                    break;
+                case 6:
+                    min1 = "06";
+                    break;
+                case 7:
+                    min1 = "07";
+                    break;
+                case 8:
+                    min1 = "08";
+                    break;
+                case 9:
+                    min1 = "09";
+                    break;
+            }
+            min1 = String(min1);
+
+            stri = hour1+min1;
+            stri = Number(stri);
+
+            if(stri>0820){
+                document.getElementById('trad').innerHTML += "<span> </span>";
+        }
+    }
+
+    function later11(){
+            let today1 = new Date();
+
+            let hour1 = today1.getHours();
+            hour1 = String(hour1);
+            let min1 = today1.getMinutes();
+            switch(min1){
+                case 0:
+                    min1 = "00";
+                    break;
+                case 1:
+                    min1 = "01";
+                    break;
+                case 2:
+                    min1 = "02";
+                    break;
+                case 3:
+                    min1 = "03";
+                    break;
+                case 4:
+                    min1 = "04";
+                    break;
+                case 5:
+                    min1 = "05";
+                    break;
+                case 6:
+                    min1 = "06";
+                    break;
+                case 7:
+                    min1 = "07";
+                    break;
+                case 8:
+                    min1 = "08";
+                    break;
+                case 9:
+                    min1 = "09";
+                    break;
+            }
+            min1 = String(min1);
+
+            stri = hour1+min1;
+            stri = Number(stri);
+
+            if(stri>0820){
+                document.getElementById('trad').innerHTML += "<span> </span>";
+        }
+    }
+
+    function later12(){
+            let today1 = new Date();
+
+            let hour1 = today1.getHours();
+            hour1 = String(hour1);
+            let min1 = today1.getMinutes();
+            switch(min1){
+                case 0:
+                    min1 = "00";
+                    break;
+                case 1:
+                    min1 = "01";
+                    break;
+                case 2:
+                    min1 = "02";
+                    break;
+                case 3:
+                    min1 = "03";
+                    break;
+                case 4:
+                    min1 = "04";
+                    break;
+                case 5:
+                    min1 = "05";
+                    break;
+                case 6:
+                    min1 = "06";
+                    break;
+                case 7:
+                    min1 = "07";
+                    break;
+                case 8:
+                    min1 = "08";
+                    break;
+                case 9:
+                    min1 = "09";
+                    break;
+            }
+            min1 = String(min1);
+
+            stri = hour1+min1;
+            stri = Number(stri);
+
+            if(stri>0820){
+                document.getElementById('trad').innerHTML += "<span> </span>";
+        }
+    }
+
+    function later13(){
+            let today1 = new Date();
+
+            let hour1 = today1.getHours();
+            hour1 = String(hour1);
+            let min1 = today1.getMinutes();
+            switch(min1){
+                case 0:
+                    min1 = "00";
+                    break;
+                case 1:
+                    min1 = "01";
+                    break;
+                case 2:
+                    min1 = "02";
+                    break;
+                case 3:
+                    min1 = "03";
+                    break;
+                case 4:
+                    min1 = "04";
+                    break;
+                case 5:
+                    min1 = "05";
+                    break;
+                case 6:
+                    min1 = "06";
+                    break;
+                case 7:
+                    min1 = "07";
+                    break;
+                case 8:
+                    min1 = "08";
+                    break;
+                case 9:
+                    min1 = "09";
+                    break;
+            }
+            min1 = String(min1);
+
+            stri = hour1+min1;
+            stri = Number(stri);
+
+            if(stri>0820){
+                document.getElementById('trad').innerHTML += "<span> </span>";
+        }
+    }
+
+    function later14(){
+            let today1 = new Date();
+
+            let hour1 = today1.getHours();
+            hour1 = String(hour1);
+            let min1 = today1.getMinutes();
+            switch(min1){
+                case 0:
+                    min1 = "00";
+                    break;
+                case 1:
+                    min1 = "01";
+                    break;
+                case 2:
+                    min1 = "02";
+                    break;
+                case 3:
+                    min1 = "03";
+                    break;
+                case 4:
+                    min1 = "04";
+                    break;
+                case 5:
+                    min1 = "05";
+                    break;
+                case 6:
+                    min1 = "06";
+                    break;
+                case 7:
+                    min1 = "07";
+                    break;
+                case 8:
+                    min1 = "08";
+                    break;
+                case 9:
+                    min1 = "09";
+                    break;
+            }
+            min1 = String(min1);
+
+            stri = hour1+min1;
+            stri = Number(stri);
+
+            if(stri>0820){
+                document.getElementById('trad').innerHTML += "<span> </span>";
+        }
+    }
+
+    function later15(){
+            let today1 = new Date();
+
+            let hour1 = today1.getHours();
+            hour1 = String(hour1);
+            let min1 = today1.getMinutes();
+            switch(min1){
+                case 0:
+                    min1 = "00";
+                    break;
+                case 1:
+                    min1 = "01";
+                    break;
+                case 2:
+                    min1 = "02";
+                    break;
+                case 3:
+                    min1 = "03";
+                    break;
+                case 4:
+                    min1 = "04";
+                    break;
+                case 5:
+                    min1 = "05";
+                    break;
+                case 6:
+                    min1 = "06";
+                    break;
+                case 7:
+                    min1 = "07";
+                    break;
+                case 8:
+                    min1 = "08";
+                    break;
+                case 9:
+                    min1 = "09";
+                    break;
+            }
+            min1 = String(min1);
+
+            stri = hour1+min1;
+            stri = Number(stri);
+
+            if(stri>0820){
+                document.getElementById('trad').innerHTML += "<span> </span>";
+        }
+    }
+
+    function later16(){
+            let today1 = new Date();
+
+            let hour1 = today1.getHours();
+            hour1 = String(hour1);
+            let min1 = today1.getMinutes();
+            switch(min1){
+                case 0:
+                    min1 = "00";
+                    break;
+                case 1:
+                    min1 = "01";
+                    break;
+                case 2:
+                    min1 = "02";
+                    break;
+                case 3:
+                    min1 = "03";
+                    break;
+                case 4:
+                    min1 = "04";
+                    break;
+                case 5:
+                    min1 = "05";
+                    break;
+                case 6:
+                    min1 = "06";
+                    break;
+                case 7:
+                    min1 = "07";
+                    break;
+                case 8:
+                    min1 = "08";
+                    break;
+                case 9:
+                    min1 = "09";
+                    break;
+            }
+            min1 = String(min1);
+
+            stri = hour1+min1;
+            stri = Number(stri);
+
+            if(stri>0820){
+                document.getElementById('trad').innerHTML += "<span> </span>";
+        }
+    }
+
+    function later17(){
+            let today1 = new Date();
+
+            let hour1 = today1.getHours();
+            hour1 = String(hour1);
+            let min1 = today1.getMinutes();
+            switch(min1){
+                case 0:
+                    min1 = "00";
+                    break;
+                case 1:
+                    min1 = "01";
+                    break;
+                case 2:
+                    min1 = "02";
+                    break;
+                case 3:
+                    min1 = "03";
+                    break;
+                case 4:
+                    min1 = "04";
+                    break;
+                case 5:
+                    min1 = "05";
+                    break;
+                case 6:
+                    min1 = "06";
+                    break;
+                case 7:
+                    min1 = "07";
+                    break;
+                case 8:
+                    min1 = "08";
+                    break;
+                case 9:
+                    min1 = "09";
+                    break;
+            }
+            min1 = String(min1);
+
+            stri = hour1+min1;
+            stri = Number(stri);
+
+            if(stri>0820){
+                document.getElementById('trad').innerHTML += "<span> </span>";
+        }
+    }
+
+    function later18(){
+            let today1 = new Date();
+
+            let hour1 = today1.getHours();
+            hour1 = String(hour1);
+            let min1 = today1.getMinutes();
+            switch(min1){
+                case 0:
+                    min1 = "00";
+                    break;
+                case 1:
+                    min1 = "01";
+                    break;
+                case 2:
+                    min1 = "02";
+                    break;
+                case 3:
+                    min1 = "03";
+                    break;
+                case 4:
+                    min1 = "04";
+                    break;
+                case 5:
+                    min1 = "05";
+                    break;
+                case 6:
+                    min1 = "06";
+                    break;
+                case 7:
+                    min1 = "07";
+                    break;
+                case 8:
+                    min1 = "08";
+                    break;
+                case 9:
+                    min1 = "09";
+                    break;
+            }
+            min1 = String(min1);
+
+            stri = hour1+min1;
+            stri = Number(stri);
+
+            if(stri>0820){
+                document.getElementById('trad').innerHTML += "<span> </span>";
+        }
+    }
+
+    function later19(){
+            let today1 = new Date();
+
+            let hour1 = today1.getHours();
+            hour1 = String(hour1);
+            let min1 = today1.getMinutes();
+            switch(min1){
+                case 0:
+                    min1 = "00";
+                    break;
+                case 1:
+                    min1 = "01";
+                    break;
+                case 2:
+                    min1 = "02";
+                    break;
+                case 3:
+                    min1 = "03";
+                    break;
+                case 4:
+                    min1 = "04";
+                    break;
+                case 5:
+                    min1 = "05";
+                    break;
+                case 6:
+                    min1 = "06";
+                    break;
+                case 7:
+                    min1 = "07";
+                    break;
+                case 8:
+                    min1 = "08";
+                    break;
+                case 9:
+                    min1 = "09";
+                    break;
+            }
+            min1 = String(min1);
+
+            stri = hour1+min1;
+            stri = Number(stri);
+
+            if(stri>0820){
+                document.getElementById('trad').innerHTML += "<span> </span>";
+        }
+    }
+
+    function later20(){
+            let today1 = new Date();
+
+            let hour1 = today1.getHours();
+            hour1 = String(hour1);
+            let min1 = today1.getMinutes();
+            switch(min1){
+                case 0:
+                    min1 = "00";
+                    break;
+                case 1:
+                    min1 = "01";
+                    break;
+                case 2:
+                    min1 = "02";
+                    break;
+                case 3:
+                    min1 = "03";
+                    break;
+                case 4:
+                    min1 = "04";
+                    break;
+                case 5:
+                    min1 = "05";
+                    break;
+                case 6:
+                    min1 = "06";
+                    break;
+                case 7:
+                    min1 = "07";
+                    break;
+                case 8:
+                    min1 = "08";
+                    break;
+                case 9:
+                    min1 = "09";
+                    break;
+            }
+            min1 = String(min1);
+
+            stri = hour1+min1;
+            stri = Number(stri);
+
+            if(stri>0820){
+                document.getElementById('trad').innerHTML += "<span> </span>";
+        }
+    }
+
+    function later21(){
+            let today1 = new Date();
+
+            let hour1 = today1.getHours();
+            hour1 = String(hour1);
+            let min1 = today1.getMinutes();
+            switch(min1){
+                case 0:
+                    min1 = "00";
+                    break;
+                case 1:
+                    min1 = "01";
+                    break;
+                case 2:
+                    min1 = "02";
+                    break;
+                case 3:
+                    min1 = "03";
+                    break;
+                case 4:
+                    min1 = "04";
+                    break;
+                case 5:
+                    min1 = "05";
+                    break;
+                case 6:
+                    min1 = "06";
+                    break;
+                case 7:
+                    min1 = "07";
+                    break;
+                case 8:
+                    min1 = "08";
+                    break;
+                case 9:
+                    min1 = "09";
+                    break;
+            }
+            min1 = String(min1);
+
+            stri = hour1+min1;
+            stri = Number(stri);
+
+            if(stri>0820){
+                document.getElementById('trad').innerHTML += "<span> </span>";
+        }
+    }
+        </script>
+        <div class="di">
+            <h2>건설과 2학년 A반</h2>
+        </div>
+        <form>
+        <table class="tbl">
+            <tr class="fir">
+                <td class="number">출석번호</td>
+                <td class="name">이름</td>
+                <td class="clock">시간</td>
+                <td>지각여부</td>
+                <td>체크</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td id="c1"></td>
+                <td id="b1"></td>
+                <td><button type="button" onclick="check1(); search1(); later1();">버튼</button></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td id="c2"></td>
+                <td id="b2"></td>
+                <td><button type="button" onclick="check2(); search2(); later2();">버튼</button></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td id="c3"></td>
+                <td id="b3"></td>
+                <td><button type="button" onclick="check3(); search3(); later3();">버튼</button></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td id="c4"></td>
+                <td id="b4"></td>
+                <td><button type="button" onclick="check4(); search4(); later4();">버튼</button></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td id="c5"></td>
+                <td id="b5"></td>
+                <td><button type="button" onclick="check5(); search5(); later5();">버튼</button></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td id="c6"></td>
+                <td id="b6"></td>
+                <td><button type="button" onclick="check6(); search6(); later6();">버튼</button></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td id="c7"></td>
+                <td id="b7"></td>
+                <td><button type="button" onclick="check7(); search7(); later7();">버튼</button></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td id="c8"></td>
+                <td id="b8"></td>
+                <td><button type="button" onclick="check8(); search8(); later8();">버튼</button></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td id="c9"></td>
+                <td id="b9"></td>
+                <td><button type="button" onclick="check9(); search9(); later9();">버튼</button></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td id="c10"></td>
+                <td id="b10"></td>
+                <td><button type="button" onclick="check10(); search10(); later10();">버튼</button></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td id="c11"></td>
+                <td id="b11"></td>
+                <td><button type="button" onclick="check11(); search11(); later11();">버튼</button></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td id="c12"></td>
+                <td id="b12"></td>
+                <td><button type="button" onclick="check12(); search12(); later12();">버튼</button></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td id="c13"></td>
+                <td id="b13"></td>
+                <td><button type="button" onclick="check13(); search13(); later13();">버튼</button></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td id="c14"></td>
+                <td id="b14"></td>
+                <td><button type="button" onclick="check14(); search14(); later14();">버튼</button></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td id="c15"></td>
+                <td id="b15"></td>
+                <td><button type="button" onclick="check15(); search15(); later15();">버튼</button></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td id="c16"></td>
+                <td id="b16"></td>
+                <td><button type="button" onclick="check16(); search16(); later16();">버튼</button></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td id="c17"></td>
+                <td id="b17"></td>
+                <td><button type="button" onclick="check17(); search17(); later17();">버튼</button></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td id="c18"></td>
+                <td id="b18"></td>
+                <td><button type="button" onclick="check18(); search18(); later18();">버튼</button></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td id="c19"></td>
+                <td id="b19"></td>
+                <td><button type="button" onclick="check19(); search19(); later19();">버튼</button></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td id="c20"></td>
+                <td id="b20"></td>
+                <td><button type="button" onclick="check20(); search20(); later20();">버튼</button></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td id="c21"></td>
+                <td id="b21"></td>
+                <td><button type="button" onclick="check21(); search21(); later21();">버튼</button></td>
+            </tr>
+        </table>
+
+        <table class="ttable">
+            <tr>
+                <td class="tday">오늘의 지각자</td>
+            </tr>
+            <tr>
+                <td id="trad"></td>
+            </tr>
+        </table>
+    </form>
+    </body>
+    </html>
+          
